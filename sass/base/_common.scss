@@ -1,0 +1,28 @@
+// сброс стилей
+
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* сброс маркеров списка */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* сброс декораций cсылок */
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

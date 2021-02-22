@@ -1,0 +1,75 @@
+.current {
+    color: var(--accent-color);
+}
+
+.sitecolor {
+    color: var(--text-color);
+}
+
+.fontstyle-norm {
+    font-style: normal;
+}
+
+.primary-textcolor {
+    color: var(--primary-text-color);
+}
+
+/* class for centering all content for parent block */
+.centered {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* body */
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: var(--normal-font-size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.17;
+    text-align: center;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    /* outline: 1px solid salmon; */
+}
+
+.page-header .list a:hover,
+.page-header .list a:focus,
+.footer address a:hover,
+.footer address a:focus {
+    color: var(--accent-color);
+}
+
+/* animations */
+.page-header .list a,
+.footer address a,
+a.client-link,
+a.social-link,
+.our-team a.social-link,
+.portfolio button,
+.portfolio-items a {
+    transition: color var(--transition-cubic-primary),
+        background-color var(--transition-cubic-primary),
+        box-shadow var(--transition-cubic-primary);
+}
