@@ -36,6 +36,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="burger-btn" data-menu-button>
+          <svg class="burger-icon" width="24" height="16">
+            <use href="./images/main-sprites.svg#icon-burger-icon"></use>
+          </svg>
+        </button>
         <!--contacts-->
         <ul class="contacts list">
           <li class="item">
@@ -58,6 +63,45 @@
         </ul>
       </div>
     </div>
+
+    <div class="mobile-menu" data-menu>
+      <button type="button" class="close-btn-mobile" data-menu-close>
+        <svg class="close-icon-mobile" width="18.67" height="18.67">
+          <use href="./images/main-sprites.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-item list"><a href="" class="menu-nav-link link current">Студия</a></li>
+        <li class="mobile-menu-item list"><a href="" class="menu-nav-link link">Портфолио</a></li>
+        <li class="mobile-menu-item list"><a href="" class="menu-nav-link link">Контакты</a></li>
+      </ul>
+
+      <ul class="contacts-moblie">
+        <li class="contacts-mobile-item list">
+          <a class="link contacts-mobile-link current" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="contacts-mobile-item list">
+          <a class="link contacts-mobile-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>  
+
+      <ul class="mobile-social">
+        <li class="mobile-social-item list">
+          <a href="#" class="mobile-social-link link current">Instagram</a>
+        </li>
+        <li class="mobile-social-item list">
+          <a href="#" class="mobile-social-link link current">Twitter</a>
+        </li>
+        <li class="mobile-social-item list">
+          <a href="#" class="mobile-social-link link current">Facebook</a>
+        </li>
+        <li class="mobile-social-item list">
+          <a href="#" class="mobile-social-link link current">LinkedIn</a>
+        </li>
+      </ul>
+
+    </div>
+
   </header>
 
   <!-- main -->
@@ -502,6 +546,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
