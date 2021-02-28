@@ -795,7 +795,7 @@ form.inputs {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list .item:not(:last-child) {
+.our-team-list .item:not(:nth-last-child(-n + 2)) {
   margin-bottom: 30px;
 }
 
@@ -820,6 +820,9 @@ form.inputs {
   }
   .our-team .item:not(:last-child) {
     margin-right: 30px;
+  }
+  .our-team .item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
   }
   .our-team-list {
     display: flex;
@@ -846,7 +849,7 @@ li.client-list-item {
   height: 90px;
 }
 
-li.client-list-item:not(:last-child) {
+li.client-list-item:not(:nth-last-child(-n + 2)) {
   margin-bottom: 30px;
 }
 
@@ -867,14 +870,35 @@ a.client-link:hover, a.client-link:focus {
   border-color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients .clients-title {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
   .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .clients .clients-title {
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+  li.client-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+  }
+  li.client-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
   }
 }
 

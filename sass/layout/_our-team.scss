@@ -50,7 +50,8 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
-        &:not(:last-child){
+
+        &:not(:nth-last-child(-n + 2)) {
             margin-bottom: 30px;
         }
     }
@@ -59,7 +60,7 @@
 
 // =====MOBILE=====
 @media screen and (max-width: 767px) {
-    .our-team{
+    .our-team {
         padding-bottom: 60px;
     }
 }
@@ -83,14 +84,18 @@
             &:not(:last-child) {
                 margin-right: 30px;
             }
+
+            &:not(:nth-last-child(-n + 2)) {
+                margin-bottom: 0;
+            }
         }
     }
 
- .our-team-list {
-     display: flex;
-     flex-wrap: nowrap;
-    
- }
+    .our-team-list {
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
 
     .ourteam-text-block {
         padding-top: 30px;
@@ -99,4 +104,4 @@
         padding-right: 32px;
     }
 
-  }
+}

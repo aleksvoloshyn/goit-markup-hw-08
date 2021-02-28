@@ -15,12 +15,11 @@ li.client-list-item {
     height: 90px;
 
 
-    &:not(:last-child) {
+    &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 30px;
     }
 
 }
-
 
 
 a {
@@ -44,10 +43,6 @@ a {
     }
 }
 
-
-
-// =====MOBILE=====
-@media screen and (max-width: 767px) {
     .clients {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -55,15 +50,49 @@ a {
         .clients-title {
             font-size: 28px;
             line-height: 33px;
+            margin-bottom: 30px;
         }
     }
+
+
+
+// =====MOBILE=====
+@media screen and (max-width: 767px) {
+
 }
 
 // =====TABLET=====
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+}
 
 // =====DESKTOP=====
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+      .clients {
+          padding-top: 94px;
+          padding-bottom: 94px;
+
+          .clients-title {
+              font-size: 36px;
+              line-height: 42px;
+              margin-bottom: 50px;
+          }
+      }
+
+      li.client-list-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 170px;
+          
+
+          &:not(:nth-last-child(-n + 2)) {
+              margin-bottom: 0;
+          }
+        }
+
+}
 
 
 
