@@ -247,7 +247,6 @@ a.social-link:hover, a.social-link:focus {
     height: 100vh;
     padding: 48px 40px;
     background-color: var(--whitecolor);
-    opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
