@@ -1,4 +1,19 @@
 /* modal window */
+
+@media screen and (max-width: 767px) {
+
+}
+
+// =====TABLET=====
+@media screen and (min-width: 768px) {
+
+}
+
+// =====DESKTOP=====
+@media screen and (min-width: 1200px) {}
+
+
+
 .backdrop {
     position: fixed;
     z-index: 2;
@@ -27,8 +42,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
 
     padding: 40px;
     background-color: var(--modal-bg-color);
@@ -40,8 +55,8 @@
 /* close-button */
 .modal-button {
     position: absolute;
-    top: 14px;
-    right: 14px;
+    top: 8px;
+    right: 8px;
 
     width: 30px;
     height: 30px;
@@ -63,7 +78,7 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23.44px;
+    line-height: 30x;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -73,7 +88,7 @@
 
 /* инпуты */
 form.inputs {
-    width: 448px;
+    width: 370px;
     height: 342px;
     /* outline: 1px solid aquamarine; */
 }
@@ -162,6 +177,8 @@ form.inputs {
     align-items: center;
     margin-bottom: 30px;
     letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .modal-license {
@@ -205,3 +222,192 @@ form.inputs {
         background-repeat: no-repeat;
     }
 }
+
+
+
+
+
+// .modal {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+
+//     width: 528px;
+//     height: 581px;
+
+//     padding: 40px;
+//     background-color: var(--modal-bg-color);
+
+//     box-shadow: var(--modal-boxshawow);
+//     border-radius: 4px;
+// }
+
+// /* close-button */
+// .modal-button {
+//     position: absolute;
+//     top: 14px;
+//     right: 14px;
+
+//     width: 30px;
+//     height: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     border: 1px solid var(--modal-input-bordercolor);
+//     border-radius: 50%;
+
+//     background-color: inherit;
+
+//     &:hover {
+//         fill: var(--accent-color);
+//     }
+// }
+
+// /* заголовок формы*/
+// .modal-title {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 23.44px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+
+//     color: var(--primary-text-color);
+//     margin-bottom: 12px;
+// }
+
+// /* инпуты */
+// form.inputs {
+//     width: 448px;
+//     height: 342px;
+//     /* outline: 1px solid aquamarine; */
+// }
+
+// .form-field {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .form-input,
+// .form-text {
+//     /* width: 448px; */
+//     /* height: 40px; */
+//     padding-left: 42px;
+//     padding-bottom: 11px;
+//     padding-top: 11px;
+//     margin-bottom: 10px;
+
+//     border: 1px solid var(--modal-input-bordercolor);
+//     border-radius: 4px;
+
+//     transition: outline-color var(--transition-cubic-primary);
+// }
+
+// .form-text {
+//     padding-left: 12px;
+// }
+
+// .form-input {
+//     &:focus+.input-icon {
+//         fill: var(--accent-color);
+//     }
+
+//     &.form-input:focus {
+//         outline-color: var(--accent-color);
+//     }
+// }
+
+
+// .form-text {
+//     &:focus {
+//         outline-color: var(--accent-color);
+//     }
+// }
+
+// .form-field-textarea {
+//     margin-bottom: 20px;
+// }
+
+// .form-label {
+//     font-size: 12px;
+//     line-height: 14.06px;
+//     margin-bottom: var(--modal-form-label-mar-bottom);
+// }
+
+// .input-icon {
+//     position: absolute;
+//     left: 12px;
+//     top: 50%;
+//     transform: translateY(calc(-50% + var(--modal-form-label-mar-bottom)));
+// }
+
+// /* textarea */
+// .form-text {
+//     resize: none;
+//     margin-bottom: 0;
+// }
+
+// .form-text {
+//     &::placeholder {
+//         font-size: 12px;
+//         line-height: 14px;
+//         letter-spacing: 0.01em;
+//         color: var(--placeholder-text-color);
+//     }
+// }
+
+// .wrapp-form {
+//     text-align: center;
+// }
+
+// .agreement {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 30px;
+//     letter-spacing: 0.03em;
+// }
+
+// .modal-license {
+//     color: var(--accent-color);
+//     text-decoration: underline;
+// }
+
+// /* обнуление стилей браузера для чекбокса */
+// .checkbox {
+//     position: absolute;
+//     clip: rect(0 0 0 0);
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     overflow: hidden;
+
+//     &:checked+.agreement::before {
+//         background-image: url(./../images/modal/icon-checked.svg);
+//     }
+
+//     &:focus+.agreement::before {
+//         box-shadow: var(--modal-box-shadow-checkbox);
+//     }
+
+//     &:focus:checked+.agreement::before {
+//         box-shadow: var(--modal-box-shadow-checkbox);
+//     }
+// }
+
+// .agreement {
+//     &::before {
+//         content: "";
+//         width: 16px;
+//         height: 15px;
+//         background-image: url(./../images/modal/icon-check.svg);
+//         margin-right: 7px;
+//         background-size: contain;
+//         background-origin: border-box;
+//         background-repeat: no-repeat;
+//     }
+// }
