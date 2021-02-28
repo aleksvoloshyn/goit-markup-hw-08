@@ -41,8 +41,8 @@
         transform: translateX(-50%);
         width: 100%;
         max-width: 480px;
-        // height: 100vh;
-        min-height: 796px;
+        height: 100vh;
+        // min-height: 1000px;
 
         padding: 48px 40px;
         background-color: var(--whitecolor);
@@ -55,8 +55,10 @@
             opacity: 100%;
             visibility: visible;
             pointer-events: visible;
+            overflow: scroll;
         }
 
+     
         .mobile-menu-nav,
         .contacts-moblie,
         .mobile-social {
