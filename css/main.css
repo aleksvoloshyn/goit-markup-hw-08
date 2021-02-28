@@ -772,6 +772,7 @@ form.inputs {
   line-height: 19px;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-transform: unset;
 }
 
 .ourteam-text-block .our-team-description {
@@ -800,6 +801,26 @@ form.inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .our-team .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .our-team-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .ourteam-text-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
