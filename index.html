@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -71,9 +71,15 @@
         </svg>
       </button>
       <ul class="mobile-menu-nav">
-        <li class="mobile-menu-item list"><a href="" class="menu-nav-link link current">Студия</a></li>
-        <li class="mobile-menu-item list"><a href="" class="menu-nav-link link">Портфолио</a></li>
-        <li class="mobile-menu-item list"><a href="" class="menu-nav-link link">Контакты</a></li>
+        <li class="mobile-menu-item list">
+          <a href="" class="menu-nav-link link current">Студия</a>
+        </li>
+        <li class="mobile-menu-item list">
+          <a href="" class="menu-nav-link link">Портфолио</a>
+        </li>
+        <li class="mobile-menu-item list">
+          <a href="" class="menu-nav-link link">Контакты</a>
+        </li>
       </ul>
 
       <ul class="contacts-moblie">
@@ -83,7 +89,7 @@
         <li class="contacts-mobile-item list">
           <a class="link contacts-mobile-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-      </ul>  
+      </ul>
 
       <ul class="mobile-social">
         <li class="mobile-social-item list">
@@ -99,9 +105,7 @@
           <a href="#" class="mobile-social-link link current">LinkedIn</a>
         </li>
       </ul>
-
     </div>
-
   </header>
 
   <!-- main -->
@@ -214,13 +218,43 @@
       </div>
     </section> -->
 
-    <!--our team-->
-    <!-- <section class="section our-team">
+    <!-- our team-->
+    <section class="section our-team">
       <div class="container">
         <h2 class="primary-textcolor our-team-title">Наша команда</h2>
         <ul class="our-team-list list">
           <li class="centered item">
-            <img src="./images/studio/team1.jpg" alt="фото Игоря Демьяненко" width="270" height="260" />
+            <picture class="our-team-pic">
+              <source srcset="
+                    ./images/studio/our-team/desktop/team1.webp 1x,
+                    ./images/our-team/desktop/team1@2x.webp     2x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/desktop/team1.jpg 1x,
+                    ./images/our-team/desktop/team1@2x.jpg     2x
+                  " media="(min-width: 1200px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/tablet/team1.webp 1x,
+                    ./images/our-team/tablet/team1@2x.webp     2x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/tablet/team1.jpg 1x,
+                    ./images/our-team/tablet/team1@2x.jpg     2x
+                  " media="(min-width: 768px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/mobile/team1.webp 1x,
+                    ./images/our-team/mobile/team1@2x.webp     2x
+                  " media="(min-width: 480px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/mobile/team1.jpg 1x,
+                    ./images/our-team/mobile/team1@2x.jpg     2x
+                  " media="(min-width: 480px)" />
+
+              <img src="./images/studio/our-team/desktop/team1.jpg" alt="фото Игоря Демьяненко" />
+            </picture>
+
             <div class="ourteam-text-block">
               <h3 class="primary-textcolor title">Игорь Демьяненко</h3>
               <p class="our-team-description" lang="en">Product Designer</p>
@@ -258,7 +292,37 @@
             </div>
           </li>
           <li class="centered item">
-            <img src="./images/studio//team2.jpg" alt="фото Ольги Репиной" width="270" height="260" />
+            <picture class="our-team-pic">
+              <source srcset="
+                    ./images/studio/our-team/desktop/team2.webp 1x,
+                    ./images/our-team/desktop/team2@2x.webp     2x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/desktop/team2.jpg 1x,
+                    ./images/our-team/desktop/team2@2x.jpg     2x
+                  " media="(min-width: 1200px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/tablet/team2.webp 1x,
+                    ./images/our-team/tablet/team2@2x.webp     2x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/tablet/team2.jpg 1x,
+                    ./images/our-team/tablet/team2@2x.jpg     2x
+                  " media="(min-width: 768px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/mobile/team2.webp 1x,
+                    ./images/our-team/mobile/team2@2x.webp     2x
+                  " media="(min-width: 480px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/mobile/team2.jpg 1x,
+                    ./images/our-team/mobile/team2@2x.jpg     2x
+                  " media="(min-width: 480px)" />
+
+              <img src="./images/studio/our-team/desktop/team2.jpg" alt="фото Ольги Репиной" />
+            </picture>
+
             <div class="ourteam-text-block">
               <h3 class="primary-textcolor title">Ольга Репина</h3>
               <p class="our-team-description" lang="en">Frontend Developer</p>
@@ -296,7 +360,36 @@
             </div>
           </li>
           <li class="centered item">
-            <img src="./images/studio//team3.jpg" alt="фото Николая Тарасова" width="270" height="260" />
+            <picture class="our-team-pic">
+              <source srcset="
+                    ./images/studio/our-team/desktop/team3.webp 1x,
+                    ./images/our-team/desktop/team3@2x.webp     2x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/desktop/team3.jpg 1x,
+                    ./images/our-team/desktop/team3@2x.jpg     2x
+                  " media="(min-width: 1200px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/tablet/team3.webp 1x,
+                    ./images/our-team/tablet/team3@2x.webp     2x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/tablet/team3.jpg 1x,
+                    ./images/our-team/tablet/team3@2x.jpg     2x
+                  " media="(min-width: 768px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/mobile/team3.webp 1x,
+                    ./images/our-team/mobile/team3@2x.webp     2x
+                  " media="(min-width: 480px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/mobile/team3.jpg 1x,
+                    ./images/our-team/mobile/team3@2x.jpg     2x
+                  " media="(min-width: 480px)" />
+
+              <img src="./images/studio/our-team/desktop/team3.jpg" alt="фото Николая Тарасова" />
+            </picture class="our-team-pic">
             <div class="ourteam-text-block">
               <h3 class="primary-textcolor title">Николай Тарасов</h3>
               <p class="our-team-description" lang="en">Marketing</p>
@@ -334,7 +427,36 @@
             </div>
           </li>
           <li class="centered item">
-            <img src="./images/studio/team4.jpg" alt="фото Михаила Ермакова" width="270" height="260" />
+            <picture class="our-team-pic">
+              <source srcset="
+                    ./images/studio/our-team/tablet/team4.webp 1x,
+                    ./images/our-team/tablet/team4@2x.webp     2x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/tablet/team4.jpg 1x,
+                    ./images/our-team/tablet/team4@2x.jpg     2x
+                  " media="(min-width: 768px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/mobile/team4.webp 1x,
+                    ./images/our-team/mobile/team4@2x.webp     2x
+                  " media="(min-width: 480px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/mobile/team4.jpg 1x,
+                    ./images/our-team/mobile/team4@2x.jpg     2x
+                  " media="(min-width: 480px)" />
+
+              <source srcset="
+                    ./images/studio/our-team/desktop/team4.webp 1x,
+                    ./images/our-team/desktop/team4@2x.webp     2x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./images/studio/our-team/desktop/team4.jpg 1x,
+                    ./images/our-team/desktop/team4@2x.jpg     2x
+                  " media="(min-width: 1200px)" />
+
+              <img src="./images/studio/our-team/desktop/team4.jpg" alt="фото Михаила Ермакова" />
+            </picture>
             <div class="ourteam-text-block">
               <h3 class="primary-textcolor title">Михаил Ермаков</h3>
               <p class="our-team-description" lang="en">UI Designer</p>
@@ -373,7 +495,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- <section class="section clients">
       <div class="container">
@@ -493,7 +615,6 @@
   </footer> -->
 
   <div class="backdrop is-hidden" data-modal>
-
     <div class="modal">
       <button data-modal-close class="modal-button">
         <svg class="icon-close" width="11" height="11">
@@ -536,11 +657,11 @@
 
         <div class="wrapp-form">
           <input class="checkbox" type="checkbox" name="checkbox" value="checkbox" id="checkbox" />
-          <label class="label agreement" for="checkbox"> Соглашаюсь с рассылкой и принимаю
+          <label class="label agreement" for="checkbox">
+            Соглашаюсь с рассылкой и принимаю
             <a class="modal-license" href="#">Условия договора</a></label>
           <button class="button send-button">Отправить</button>
         </div>
-
       </form>
     </div>
   </div>
