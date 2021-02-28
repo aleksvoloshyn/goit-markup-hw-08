@@ -744,44 +744,56 @@ form.inputs {
 }
 
 /* what we do section*/
-.what-we-do .list {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 767px) {
+  .what-we-do {
+    display: none;
+  }
 }
 
-.what-we-do .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .what-we-do {
+    display: none;
+  }
 }
 
-.what-we-do-title,
-.our-team-title,
-.clients-title {
-  margin-bottom: 50px;
-}
-
-/* what-we-do-label */
-.what-we-do-thumb {
-  position: relative;
-  z-index: 1;
-}
-
-.what-we-do-textwrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: var(--what-we-do-gredient);
-}
-
-.what-we-do-label {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--whitecolor);
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+  }
+  .what-we-do .list {
+    display: flex;
+    justify-content: center;
+  }
+  .what-we-do .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .what-we-do-title,
+  .our-team-title,
+  .clients-title {
+    margin-bottom: 50px;
+  }
+  /* what-we-do-label */
+  .what-we-do-thumb {
+    position: relative;
+    z-index: 1;
+  }
+  .what-we-do-textwrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--what-we-do-gredient);
+  }
+  .what-we-do-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--whitecolor);
+  }
 }
 
 /* our team */
