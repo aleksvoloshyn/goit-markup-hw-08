@@ -125,6 +125,8 @@ h3 {
 
 .page-header .list a:hover,
 .page-header .list a:focus,
+.burger-btn:hover,
+.close-btn-mobile:hover,
 .footer address a:hover,
 .footer address a:focus {
   color: var(--accent-color);
@@ -178,7 +180,8 @@ a.social-link,
     display: none;
   }
   .nav-wrapper {
-    padding-top: 16px;
+    padding: 16px 0;
+    height: 60px;
   }
   .site-nav-logo {
     font-family: Raleway;
@@ -258,12 +261,15 @@ a.social-link,
   .mobile-menu .mobile-social .mobile-social-item:not(:last-child) {
     margin-right: 20px;
   }
+  .mail,
+  .phone,
+  .burger-icon,
+  .close-icon-mobile {
+    fill: currentColor;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .page-header {
-    height: 80px;
-  }
   .burger-btn,
   .mobile-menu {
     display: none;
@@ -290,13 +296,18 @@ a.social-link,
   .site-nav-pages .item:not(:last-child) {
     margin-right: 30px;
   }
+  .site-nav-pages .item .link {
+    padding: 26px 0;
+  }
   .contacts .item {
-    margin-bottom: 10px;
     font-weight: 500;
   }
   .contacts .item .link {
     display: flex;
     align-items: center;
+  }
+  .contacts .item:not(:last-child) {
+    margin-bottom: 10px;
   }
   .contacts-logo {
     margin-right: 10px;
@@ -315,16 +326,16 @@ a.social-link,
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+  .mail,
+  .phone {
+    fill: currentColor;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
     align-items: center;
-  }
-  .nav-wrapper {
-    padding-top: 24px;
-    padding-bottom: 25px;
   }
   .site-nav-logo {
     font-size: 26px;
@@ -334,8 +345,12 @@ a.social-link,
   .site-nav-pages .item:not(:last-child) {
     margin-right: 50px;
   }
+  .site-nav-pages .item .link {
+    padding: 32px 0;
+  }
   .contacts .item:first-child {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 

@@ -7,7 +7,8 @@
     }
 
     .nav-wrapper {
-        padding-top: 16px;
+        padding: 16px 0;
+        height: 60px;
     }
 
     .site-nav-logo {
@@ -106,13 +107,19 @@
             }
         }
     }
+
+      .mail,
+      .phone,
+      .burger-icon,
+      .close-icon-mobile {
+          fill: currentColor;
+      }
+
+
 }
 
 // TABLET
 @media screen and (min-width: 768px) {
-    .page-header{
-        height: 80px;
-    }
 
     .burger-btn,
     .mobile-menu {
@@ -130,9 +137,6 @@
         align-items: center;
     }
 
-    .nav-wrapper {
-        // padding: 26px 0;
-    }
 
     .site-nav-logo {
         font-family: Raleway, sans-serif;
@@ -143,25 +147,33 @@
         margin-right: 88px;
     }
 
-    .site-nav-pages .item{
+    .site-nav-pages .item {
         font-weight: 500;
+
         &:not(:last-child) {
             margin-right: 30px;
         }
-    }
-   
 
-    .contacts .item {
-        margin-bottom: 10px;
-        font-weight: 500;
-        .link{
-            display: flex;
-            align-items: center;
+        & .link {
+            padding: 26px 0;
         }
     }
 
-    .contacts-logo{
-        margin-right:10px;
+
+    .contacts .item {
+        font-weight: 500;
+        .link {
+            display: flex;
+            align-items: center;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contacts-logo {
+        margin-right: 10px;
     }
 
     .link.current {
@@ -182,21 +194,18 @@
         }
     }
 
+    .mail,
+    .phone {
+        fill: currentColor;
+    }
+
 }
-
-
-
 
 // DESKTOP 1200px
 @media screen and (min-width: 1200px) {
     .contacts {
         display: flex;
         align-items: center;
-    }
-
-    .nav-wrapper {
-        padding-top: 24px;
-        padding-bottom: 25px;
     }
 
     .site-nav-logo {
@@ -206,109 +215,20 @@
         margin-right: 93px;
     }
 
-    .site-nav-pages .item:not(:last-child) {
-        margin-right: 50px;
+    .site-nav-pages .item {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        & .link {
+            padding: 32px 0;
+        }
     }
 
     .contacts .item:first-child {
         margin-right: 30px;
+        margin-bottom: 0;
     }
 
 
 }
-
-
-
-
-// /* header */
-// .bordered-header {
-//     border-bottom: 1px solid var(--header-border-color);
-// }
-
-// /* site-nav */
-// .nav-wrapper {
-//     display: flex;
-// }
-
-// .site-nav {
-//     display: flex;
-//     align-items: center;
-
-//     .link {
-//         display: flex;
-//         align-items: center;
-//         padding-top: 32px;
-//         padding-bottom: 32px;
-//     }
-// }
-
-// .site-nav-pages {
-//     display: flex;
-// }
-
-// .site-nav-pages {
-//     .item:not(:last-child) {
-//         margin-right: 50px;
-//     }
-// }
-
-
-
-// .link.current {
-//     position: relative;
-
-//     &:after {
-//         position: absolute;
-//         bottom: 0;
-//         left: 0;
-
-//         content: '';
-//         display: block;
-//         width: 100%;
-//         height: 4px;
-
-//         background-color: var(--accent-color);
-//         border-radius: 2px;
-//     }
-// }
-
-// /* site logo */
-// .site-nav-logo {
-//     display: block;
-//     margin-right: 91px;
-
-//     font-family: Raleway, sans-serif;
-//     font-weight: bold;
-//     font-size: 26px;
-//     line-height: 1.19;
-// }
-
-// .contacts {
-//     display: flex;
-//     margin-left: auto;
-//     align-items: center;
-// }
-
-// /* всем у кого сверху по-соседству класс item */
-// .contacts {
-//     .item+.item {
-//         margin-left: 50px;
-//     }
-// }
-
-// /* site navigation */
-// .site-nav,
-// .contacts {
-//     font-weight: 500;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-// }
-
-// .contacts-logo {
-//     margin-right: 10px;
-// }
-
-// .mail,
-// .phone {
-//     fill: currentColor;
-// }

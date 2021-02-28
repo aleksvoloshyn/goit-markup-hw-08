@@ -56,10 +56,13 @@ h3 {
 
 .page-header .list a:hover,
 .page-header .list a:focus,
+.burger-btn:hover,
+.close-btn-mobile:hover,
 .footer address a:hover,
 .footer address a:focus {
     color: var(--accent-color);
 }
+
 
 /* animations */
 .page-header .list a,
