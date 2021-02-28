@@ -1,4 +1,16 @@
 /* what we do section*/
+// =====MOBILE=====
+@media screen and (max-width: 767px) {}
+
+// =====TABLET=====
+@media screen and (min-width: 768px) {}
+
+// =====DESKTOP=====
+@media screen and (min-width: 1200px) {}
+
+
+
+
 .what-we-do {
     .list {
         display: flex;
