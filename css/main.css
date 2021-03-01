@@ -428,8 +428,8 @@ a.social-link:hover, a.social-link:focus {
 /* hero */
 .hero {
   background-color: var(--second-bg-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url("./../../images/studio/hero/mobile/hero.jpg");
-  background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/mobile/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url(../images/studio/hero/mobile/hero.jpg);
+  background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url(../images/studio/hero/mobile/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -483,23 +483,23 @@ a.social-link:hover, a.social-link:focus {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url("./../../images/studio/hero/mobile/hero@2x.jpg");
-    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/mobile/hero@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url(../images/studio/hero/mobile/hero@2x.jpg);
+    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url(../images/studio/hero/mobile/hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url("./../../images/studio/hero/tablet/hero.jpg");
-    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/tablet/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url(../images/studio/hero/tablet/hero.jpg);
+    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url(../images/studio/hero/tablet/hero.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url("./../../images/studio/hero/tablet/hero@2x.jpg");
-    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/tablet/hero@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url(../images/studio/hero/tablet/hero@2x.jpg);
+    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url(../images/studio/hero/tablet/hero@2x.jpg);
   }
 }
 
@@ -511,8 +511,8 @@ a.social-link:hover, a.social-link:focus {
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url("./../../images/studio/hero/desktop/hero.jpg");
-    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/desktop/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url(../images/studio/hero/desktop/hero.jpg);
+    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url(../images/studio/hero/desktop/hero.jpg);
   }
   .hero-content {
     width: 696px;
@@ -533,8 +533,8 @@ a.social-link:hover, a.social-link:focus {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url("./../../images/studio/hero/desktop/hero@2x.jpg");
-    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/desktop/hero@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gredient)), to(var(--hero-gredient))), url(../images/studio/hero/desktop/hero@2x.jpg);
+    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url(../images/studio/hero/desktop/hero@2x.jpg);
   }
 }
 
