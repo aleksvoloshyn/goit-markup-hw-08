@@ -312,6 +312,8 @@ a.social-link:hover, a.social-link:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .mobile-menu .mobile-social .mobile-social-item:not(:last-child) {
     margin-right: 20px;

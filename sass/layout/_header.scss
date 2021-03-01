@@ -103,6 +103,7 @@
             font-size: 18px;
             line-height: 1.2;
             display: flex;
+            flex-wrap: wrap;
 
             .mobile-social-item:not(:last-child) {
                 margin-right: 20px;
