@@ -239,7 +239,7 @@ a.social-link:hover, a.social-link:focus {
     font-family: Raleway;
     font-weight: bold;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
   }
   .burger-btn,
   .close-btn-mobile {
@@ -282,7 +282,7 @@ a.social-link:hover, a.social-link:focus {
   }
   .mobile-menu .mobile-menu-nav {
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.2;
   }
   .mobile-menu .mobile-menu-nav .mobile-menu-item {
     padding-bottom: 32px;
@@ -292,7 +292,7 @@ a.social-link:hover, a.social-link:focus {
   }
   .mobile-menu .contacts-moblie {
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.2;
   }
   .mobile-menu .contacts-moblie li {
     padding-bottom: 32px;
@@ -300,7 +300,7 @@ a.social-link:hover, a.social-link:focus {
   .mobile-menu .contacts-moblie li:not(:first-child) {
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
     padding-bottom: 64px;
   }
   .mobile-menu .contacts-moblie li:not(:first-child) a {
@@ -308,7 +308,7 @@ a.social-link:hover, a.social-link:focus {
   }
   .mobile-menu .mobile-social {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,7 +350,7 @@ a.social-link:hover, a.social-link:focus {
     font-family: Raleway, sans-serif;
     font-weight: bold;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
     margin-right: 88px;
   }
   .site-nav-pages .item {
@@ -410,7 +410,7 @@ a.social-link:hover, a.social-link:focus {
   }
   .site-nav-logo {
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     margin-right: 93px;
   }
   .site-nav-pages .item:not(:last-child) {
@@ -453,7 +453,7 @@ a.social-link:hover, a.social-link:focus {
   color: var(--hero-title);
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -603,7 +603,7 @@ a.social-link:hover, a.social-link:focus {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -661,7 +661,7 @@ form.inputs {
 
 .form-label {
   font-size: 12px;
-  line-height: 14.06px;
+  line-height: 1.2;
   margin-bottom: var(--modal-form-label-mar-bottom);
 }
 
@@ -681,28 +681,28 @@ form.inputs {
 
 .form-text::-webkit-input-placeholder {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--placeholder-text-color);
 }
 
 .form-text:-ms-input-placeholder {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--placeholder-text-color);
 }
 
 .form-text::-ms-input-placeholder {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--placeholder-text-color);
 }
 
 .form-text::placeholder {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--placeholder-text-color);
 }
@@ -724,7 +724,7 @@ form.inputs {
   margin-bottom: 30px;
   letter-spacing: 0.03em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
 }
 
 .modal-license {
@@ -947,7 +947,7 @@ form.inputs {
 .ourteam-text-block .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: unset;
@@ -956,7 +956,7 @@ form.inputs {
 .ourteam-text-block .our-team-description {
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
@@ -1025,7 +1025,7 @@ form.inputs {
   }
   .our-team-title {
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.2;
   }
 }
 
@@ -1085,7 +1085,7 @@ a.client-link:hover, a.client-link:focus {
 
 .clients .clients-title {
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.8;
   margin-bottom: 30px;
 }
 
@@ -1096,7 +1096,7 @@ a.client-link:hover, a.client-link:focus {
   }
   .clients .clients-title {
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.1;
     margin-bottom: 50px;
   }
   li.client-list-item {
