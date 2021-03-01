@@ -4,6 +4,8 @@
     .title {
         display: none;
     }
+
+    line-height: 1.7;
 }
 
 // =====MOBILE=====
@@ -73,5 +75,9 @@
         background-color: var(--third-bg-color);
         border-radius: 4px;
         margin-bottom: 30px;
+    }
+
+    .item-details p {
+        margin-bottom: 0;
     }
 }
