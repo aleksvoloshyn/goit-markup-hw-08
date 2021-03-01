@@ -1100,6 +1100,7 @@ a.client-link:hover, a.client-link:focus {
   .subscribe-form {
     width: inherit;
     text-align: inherit;
+    margin-bottom: 0;
   }
   .social-list {
     justify-content: start;
