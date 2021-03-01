@@ -468,7 +468,7 @@ a.social-link:hover, a.social-link:focus {
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./../../images/studio/hero/desktop/hero.jpg");
+    background-image: linear-gradient(to right, var(--hero-gredient), var(--hero-gredient)), url("./images/studio/hero/desktop/hero.jpg");
   }
   .hero-content {
     width: 696px;
