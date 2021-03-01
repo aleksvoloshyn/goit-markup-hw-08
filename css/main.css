@@ -1121,25 +1121,29 @@ a.client-link:hover, a.client-link:focus {
 }
 
 /* portfolio styles */
+.portfolio h1 {
+  display: none;
+}
+
 .portfolio button:hover, .portfolio button:focus {
   background-color: var(--accent-color);
   color: var(--whitecolor);
   box-shadow: var(--button-shadow);
 }
 
-.portfolio h1 {
-  display: none;
-}
-
 /* filter buttons */
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .filter-list .item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter-list .item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
 }
 
 .filter-list button {
@@ -1167,8 +1171,7 @@ a.client-link:hover, a.client-link:focus {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-  /* 2nd layer hover*/
+  justify-content: center;
 }
 
 .portfolio-items .title {
@@ -1180,38 +1183,34 @@ a.client-link:hover, a.client-link:focus {
 }
 
 .portfolio-items .item {
-  width: 370px;
-  margin: 15px;
+  width: 450px;
   border: 1px solid var(--border-color-portfolio);
 }
 
-.portfolio-items .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-items .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+.portfolio-items .item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-items .item a:hover .portfolio-items .item a:focus {
   box-shadow: var(--portfolio-card-shadow);
 }
 
-.portfolio-items .portfolio-text-block {
+.portfolio-text-block {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.portfolio-items .portfolio-description {
+.portfolio-description {
   margin-top: 4px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
 }
 
-.portfolio-items .potfolio-items-thumb {
+/* 2nd layer hover*/
+.potfolio-items-thumb {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1219,7 +1218,7 @@ a.client-link:hover, a.client-link:focus {
   align-items: center;
 }
 
-.portfolio-items .overlay {
+.overlay {
   /* border: 1px dotted saddlebrown; */
   position: absolute;
   top: 0;
@@ -1237,8 +1236,8 @@ a.client-link:hover, a.client-link:focus {
   transition: transform var(--transition-cubic-primary);
 }
 
-.portfolio-items .portfolio-items-link:hover .overlay,
-.portfolio-items .portfolio-items-link:focus .overlay {
+.portfolio-items-link:hover .overlay,
+.portfolio-items-link:focus .overlay {
   opacity: 1;
   transform: translatey(0);
 }
