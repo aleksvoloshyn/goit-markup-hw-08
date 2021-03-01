@@ -226,6 +226,10 @@ a.social-link:hover, a.social-link:focus {
   }
 }
 
+.mobile-menu {
+  background-color: cadetblue;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav-pages,
   .contacts {
@@ -264,7 +268,6 @@ a.social-link:hover, a.social-link:focus {
     max-width: 480px;
     height: 100vh;
     padding: 48px 40px;
-    background-color: var(--whitecolor);
     visibility: hidden;
     pointer-events: none;
   }
@@ -435,7 +438,6 @@ a.social-link:hover, a.social-link:focus {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;

@@ -1,3 +1,7 @@
+
+.mobile-menu{
+    background-color: cadetblue;
+}
 // MOBILE 480px
 @media screen and (max-width: 767px) {
 
@@ -45,7 +49,7 @@
         // min-height: 1000px;
 
         padding: 48px 40px;
-        background-color: var(--whitecolor);
+        // background-color: var(--whitecolor);
 
         // opacity: 0;
         visibility: hidden;
