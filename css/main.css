@@ -782,6 +782,9 @@ form.inputs {
   .advantages-list .item {
     width: 354px;
   }
+  .advantages-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
