@@ -60,6 +60,12 @@
 @media screen and (max-width: 767px) {
   .our-team {
     padding-bottom: 60px;
+
+    .item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 
