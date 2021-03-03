@@ -218,6 +218,12 @@ a.social-link:hover, a.social-link:focus {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .contacts-mobile-link {
+    font-size: 26px;
+  }
+}
+
 .site-nav-pages,
 .contacts {
   display: none;
@@ -251,7 +257,7 @@ a.social-link:hover, a.social-link:focus {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
