@@ -288,8 +288,8 @@ a.social-link:hover, a.social-link:focus {
   line-height: 1.2;
 }
 
-.mobile-menu .mobile-menu-nav .mobile-menu-item {
-  padding-bottom: 32px;
+.mobile-menu .mobile-menu-nav .mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-menu .mobile-menu-nav .mobile-menu-item:last-child {

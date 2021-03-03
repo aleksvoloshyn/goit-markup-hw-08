@@ -74,8 +74,9 @@
     line-height: 1.2;
 
     .mobile-menu-item {
-      padding-bottom: 32px;
-
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
       &:last-child {
         margin-bottom: 302px;
       }
