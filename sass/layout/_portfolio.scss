@@ -6,7 +6,7 @@
   }
 }
 
-.bordered-header{
+.bordered-header {
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -154,8 +154,14 @@
   }
 }
 
-// =====MOBILE=====
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  ul.client-list {
+    justify-content: center;
+
+    li.client-list-item:not(last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 // =====TABLET=====

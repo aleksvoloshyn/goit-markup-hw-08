@@ -710,7 +710,7 @@ form.inputs {
 }
 
 .agreement::before {
-  content: "";
+  content: '';
   width: 16px;
   height: 15px;
   background-image: url(./../images/modal/icon-check.svg);
@@ -718,6 +718,17 @@ form.inputs {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 92%;
+    padding: 12px;
+    padding-top: 46px;
+  }
+  .modal .inputs {
+    width: fit-content;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1305,6 +1316,15 @@ a.client-link:hover, a.client-link:focus {
 .portfolio-items-link:focus .overlay {
   opacity: 1;
   transform: translatey(0);
+}
+
+@media screen and (max-width: 479px) {
+  ul.client-list {
+    justify-content: center;
+  }
+  ul.client-list li.client-list-item:not(last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
