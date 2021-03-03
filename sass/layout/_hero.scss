@@ -2,17 +2,14 @@
 
 .hero {
   background-color: var(--second-bg-color);
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       var(--hero-gredient),
-      var(--hero-gredient)
-    ),
+      var(--hero-gredient)),
     url(../images/studio/hero/mobile/hero.jpg);
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  // width: 480px;
   height: 400px;
 
   margin-left: auto;
@@ -63,50 +60,67 @@
   letter-spacing: 0.06em;
 }
 
-// RETINA-MIBILE
+// RETINA
 @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi) and (min-width: 320px),
-  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+screen and (min-resolution: 192dpi) and (min-width: 320px),
+screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--hero-gredient),
-        var(--hero-gredient)
-      ),
+        var(--hero-gredient)),
       url(../images/studio/hero/mobile/hero@2x.jpg);
   }
 }
 
+// RETINA-MOBILE
 @media screen and (min-width: 480px) {
   .hero-content {
     width: 360px;
   }
+
+  @media screen and (min-width: 481px) {
+    .hero {
+      width: 100%;
+      background-image: linear-gradient(to right,
+          var(--hero-gredient),
+          var(--hero-gredient)),
+        url(../images/studio/hero/tablet/hero.jpg);
+    }
+  }
+
+  // RETINA-TABLET
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 481px),
+  screen and (min-resolution: 192dpi) and (min-width: 481px),
+  screen and (min-resolution: 2dppx) and (min-width: 481px) {
+    .hero {
+      background-image: linear-gradient(to right,
+          var(--hero-gredient),
+          var(--hero-gredient)),
+        url(../images/studio/hero/tablet/hero@2x.jpg);
+    }
+  }
 }
 
 // TABLET
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .hero {
     width: 100%;
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--hero-gredient),
-        var(--hero-gredient)
-      ),
-      url(../images/studio/hero/tablet/hero.jpg);
+        var(--hero-gredient)),
+      url(../images/studio/hero/desktop/hero.jpg);
   }
 }
 
 // RETINA-TABLET
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
+screen and (min-resolution: 192dpi) and (min-width: 769px),
+screen and (min-resolution: 2dppx) and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--hero-gredient),
-        var(--hero-gredient)
-      ),
-      url(../images/studio/hero/tablet/hero@2x.jpg);
+        var(--hero-gredient)),
+      url(../images/studio/hero/desktop/hero@2x.jpg);
   }
 }
 
@@ -120,11 +134,9 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--hero-gredient),
-        var(--hero-gredient)
-      ),
+        var(--hero-gredient)),
       url(../images/studio/hero/desktop/hero.jpg);
   }
 
@@ -150,14 +162,12 @@
 
 // RETINA-desktop
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--hero-gredient),
-        var(--hero-gredient)
-      ),
+        var(--hero-gredient)),
       url(../images/studio/hero/desktop/hero@2x.jpg);
   }
 }
