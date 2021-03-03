@@ -339,6 +339,10 @@ a.social-link:hover, a.social-link:focus {
   .mobile-menu {
     display: none;
   }
+  .nav-wrapper {
+    padding: 0;
+    height: auto;
+  }
   .site-nav,
   .site-nav-pages {
     display: flex;
@@ -362,7 +366,7 @@ a.social-link:hover, a.social-link:focus {
     margin-right: 30px;
   }
   .site-nav-pages .item .link {
-    padding: 26px 0;
+    padding: 32px 0;
   }
   .contacts {
     display: block;
